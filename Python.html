@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="titreheader">
+            <h1>Portfolio de Thibaut Ringeval</h1>
+        </div>
+        <div>
+            <ul class="navbar">
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <tr><a href="#">Formulaire de contact</a></tr>
+                    </ul>
+                </li>
+                <li><a href="Tableau.html">Tableau de compétences</a>
+                    <ul>
+                        <a href="Stage.html">R&eacute;alisation en stage</a>
+                        <a href="CV.html">Curriculum Vitae</a>
+                    </ul>
+                </li>
+                <li><a href="#">Mes Projets</a>
+                    <ul>
+                        <li><a href="HTML-CSS.html">HTML/CSS</a></li>
+                        <li><a href="Php.html">PHP</a></li>
+                        <li><a href="Python.html">Python</a></li>
+                        <li><a href="CS.html">C#</a></li>
+                        <li><a href="Parc_informatique.html">G&eacute;rer le parc informatique</a></li>
+                        <li><a href="Incident_assistance_evo.html">R&eacute;pondre aux incidents et aux demandes d’assistance et d’&eacute;volution</a></li>
+                        <li><a href="Presence_ligne.html">D&eacute;velopper la présence en ligne de l’organisation</a></li>
+                        <li><a href="Mode_Projet.html">Travailler en mode projet</a></li>
+                        <li><a href="Dev_pro.html">Organiser son développement professionnel</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="VeilleTechnologique.html">VeilleTechnologique</a></li>
+            </ul>
+        </div>
+    </header>
+    <body>
+    <h1 class = "python1">Python</h1> <br><br>
+    <img class = "python-logos" src= "Images/python-logo.png"><br>
+    <h2 class = "python1">Python est un langage de programmation interpr&eacute;t&eacute;, multi-paradigme et multiplateformes. <br>Il favorise la programmation imp&eacute;rative structurée, fonctionnelle et orientée objet.</h2>
+    <p class = "python1">Mes projet en Python sont : Un jeu d'&eacute;chec ainsi qu'une bataille navale !</p><br>
+
+
+    <div class="troisiemediv">
+        <h1>Slider &Eacute;chec</h1>
+    <div id="slider">
+        <img src="Images/Capture.PNG" alt="La forêt de peupliers" id="slide">
+        <div id="precedent" onclick="ChangeSlide(-1)"></div>
+        <div id="suivant" onclick="ChangeSlide(1)">></div>
+    </div>
+    <script type="text/javascript">
+var slide = new Array("Images/Capture.png", "Images/Capture1.png");
+var numero = 0;
+
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    document.getElementById("slide").src = slide[numero];
+}
+setInterval("ChangeSlide(1)", 4200);
+      </script>
+    </div>
+
+
+    <div class="troisiemediv">
+        <h1>Slider Bataille Navale</h1>
+        <p>Bataille navale fais exclusivement en python et qui marche parfaitement</p>
+    <div id="slider">
+        <img src="Images/Battleship.PNG" alt="La forêt de peupliers" id="slide">
+        <div id="precedent" onclick="ChangeSlide(-1)"></div>
+        <div id="suivant" onclick="ChangeSlide(1)">></div>
+    </div>
+    <script type="text/javascript">
+var slide = new Array("Images/Position.png", "Images/touche.png");
+var numero = 0;
+
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    document.getElementById("slide").src = slide[numero];
+}
+setInterval("ChangeSlide(1)", 4200);
+      </script>
+    </div>
+
+
+</body>
+
+<footer>
+    <div id="txt-footer" class="col-md-6">
+        <p>Adresse Email : thibaut.ringeval@epsi.fr</p>
+        <p>Numéro de Téléphone : 0678455959</p>
+        <a href="https://github.com/ThibautRingeval">Thibaut Ringeval</a>
+        <p>© Thibaut Ringeval 2022</p>
+    </div>
+</footer>

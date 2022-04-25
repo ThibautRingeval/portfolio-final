@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="titreheader">
+            <h1>Portfolio de Thibaut Ringeval</h1>
+        </div>
+        <div>
+            <ul class="navbar">
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <tr><a href="#">Formulaire de contact</a></tr>
+                    </ul>
+                </li>
+                <li><a href="Tableau.html">Tableau de compétences</a>
+                    <ul>
+                        <a href="Stage.html">R&eacute;alisation en stage</a>
+                        <a href="CV.html">Curriculum Vitae</a>
+                    </ul>
+                </li>
+                <li><a href="#">Mes Projets</a>
+                    <ul>
+                        <li><a href="HTML-CSS.html">HTML/CSS</a></li>
+                        <li><a href="Php.html">PHP</a></li>
+                        <li><a href="Python.html">Python</a></li>
+                        <li><a href="CS.html">C#</a></li>
+                        <li><a href="Parc_informatique.html">G&eacute;rer le parc informatique</a></li>
+                        <li><a href="Incident_assistance_evo.html">R&eacute;pondre aux incidents et aux demandes d’assistance et d’&eacute;volution</a></li>
+                        <li><a href="Presence_ligne.html">D&eacute;velopper la présence en ligne de l’organisation</a></li>
+                        <li><a href="Mode_Projet.html">Travailler en mode projet</a></li>
+                        <li><a href="Dev_pro.html">Organiser son développement professionnel</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="VeilleTechnologique.html">VeilleTechnologique</a></li>
+            </ul>
+        </div>
+    </header><br>
+    <body>
+
+<div class="ecriture">
+<p style="text-align: center;">Chaîne youtube consacrée à ma Veille Technologique</p>
+
+<h2 style="text-align: center;">Chaine Hardware Fran&ccedil;aise</h2><br>
+
+<p style="position:relative;left: 500px;">LeoTechmaker</p><br>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/UlivCHmUgM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:relative;left:300px;"></iframe>
+
+<p style="position:relative;left:1350px;">LinusTech</p>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/HjZ4POvk14c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:relative;left:1150px;top:0px;"></iframe>
+
+<br>
+<h2 style="text-align: center;">Chaîne D&eacute;veloppement</h2><br>
+
+<p style="position:relative;left: 500px;">Graven D&eacute;veloppement</p>
+
+<iframe width="500" height="315" src="https://www.youtube.com/embed/rxa53OhZLN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:relative;left:300px;"></iframe>
+
+<p style="position:relative;left:1350px;">Fireship</p>
+
+<iframe width="500" height="315" src="https://www.youtube.com/embed/U3aXWizDbQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:relative;left:1150px;top:0px;"></iframe>
+
+<p style="position:relative;left: 500px;"> Code with Ania Kubów </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8T3naEnr67o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:relative;left:300px;"></iframe>
+
+<p style="position:relative;left: 1350px;">Mike Codeur</p>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/KR6t-a2BGOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:relative;left:1150px;top:0px;"></iframe>
+
+<p style="position:relative;left:500px;">AFUP PHP</p>
+
+<iframe width="500" height="315" src="https://www.youtube.com/embed/vUF5DIy760I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:relative;left:300px;"></iframe>
+
+<p style="position:relative;left: 1350px">Docstring</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/76hFN6kcV04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:relative;left:1150px;top:0px;"></iframe> <br> <br>
+
+<h2 style="text-align: center;">Diff&eacute;rent site web et newsletter pour une veille Technologique r&eacute;ussi</h2><br>
+
+<div class="site">
+<a href="https://hebdoo.fr/">Un site fran&ccedil;ais qui fais de l'actu hebdomadaire sur la technologie</a><br><br>
+
+<a href="https://www.clubic.com/">Un site &eacute;galement fran&ccedil;ais qui propose des articles sur les derni&egrave;res actualit&eacute;</a><br><br></div></div>
+
+<button style="text-align: center" onclick="getnews()">Bouton</button>
+<div id="output"></div>
+
+<script>
+    function getnews(){
+        //fetch('https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=fr&apikey=83644ef059ed47a9a89b4ef24857e57f,%7Bheaders: new Headers({"X-Requested-With":"test"})})
+        fetch('http://newsapi.org/v2/top-headlines?q=php&apikey=83644ef059ed47a9a89b4ef24857e57f')
+        .then(a => a.json())
+        .then(response => {
+            for(var i=0; i<response.articles.length; i++){
+                document.getElementById("output").innerHTML +=
+                "<div style='padding-top: 20px;'><img style='float:left;width:150px;'src='"+response.articles[i].urlToImage+"'><h1>"+response.articles[i].title+"</h1>"+response.articles[i].source.name+"<br>"+response.articles[i].description+" <a href='"+response.articles[i].url+"</a></div>";
+            }
+        })
+    }
+</script>
+
+
+
+</body>
+    <footer>
+        <div id="txt-footer" class="col-md-6">
+            <p>Adresse Email : thibaut.ringeval@epsi.fr</p>
+            <p>Numéro de Téléphone : 0678455959</p>
+            <a href="https://github.com/ThibautRingeval">Thibaut Ringeval</a>
+            <p>© Thibaut Ringeval 2022</p>
+        </div>
+    </footer>
+</html>
