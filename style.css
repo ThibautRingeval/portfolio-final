@@ -226,8 +226,10 @@ footer {
     padding: 50px;
     border-radius: 10px;
     color: white;
+    margin-top: 150px;
 }
 .top-left{
     align-content: space-between;
     display: flex;
+    margin-top:150px;
 }
