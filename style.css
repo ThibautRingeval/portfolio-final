@@ -233,3 +233,17 @@ footer {
     display: flex;
     margin-top:150px;
 }
+.top-center{
+    justify-content: center;
+    display: flex;
+    margin-top:75px;
+}
+.top-center a{
+    font-family: 'Montserrat', sans-serif;
+    margin: 75px 50px 50px 50px;
+    background-color: #0a3b8a;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
